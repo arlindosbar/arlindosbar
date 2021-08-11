@@ -31,8 +31,7 @@ body{
 }
 
 #menu{
-    background-color: #212529;
-    /*margin: auto;*/
+    /* background-color: #212529; */
 }
 
 .flavor{
@@ -51,7 +50,31 @@ body{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (max-width: 991px) {
+  #bg2{
+    top: 200vh;
+  }
 
+  .but-desktop{
+    visibility: hidden;
+    display: none;
+  }
+  .but-mobile{
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .but-desktop{
+    visibility: visible;
+    display: block;
+  }
+  .but-mobile{
+    visibility: hidden;
+    display: none;
+  }
+}
 
 
 
@@ -88,6 +111,3 @@ body{
     100% {opacity:1;}
   }
 
-  @media screen and (max-width: 991px) {
-    #bg2{top:200vh;}
-  }
