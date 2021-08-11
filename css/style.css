@@ -1,7 +1,93 @@
 :root {
     color-scheme: dark;
+}
+  
+body{
+    background-color: #212529;
+}
+
+#bg1, #bg2{
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#bg1{
+    background-color: #353535;
+    top: 0;
+}
+
+#bg2{
+    background-color: #191919;
+    top: 100vh
+}
+
+.content {
+    height: 100vh; 
+    display: flex;
+}
+
+#menu{
+    background-color: #212529;
+    /*margin: auto;*/
+}
+
+.flavor{
+    font-family: 'Boogaloo', cursive;
+}
+
+.currency{
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-darker.bg-darker{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bg-darkerr.bg-darkerr{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+/*PureCSS Fade Animations*/
+.fade-in {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
   }
   
-  body{
-      background-color: #212529;
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @media screen and (max-width: 991px) {
+    #bg2{top:200vh;}
   }
