@@ -6,18 +6,25 @@ body{
     background-color: #212529;
 }
 
-#bg1, #bg2{
+#bg1, #bg2, #bg1-filter{
     height: 100vh;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 #bg1{
-    background-color: #353535;
+    /* background-color: #353535; */
+    background-image: url(../img/pizzabg.png);
     top: 0;
+}
+
+#bg1-filter{
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: blur(1.5rem);
 }
 
 #bg2{
@@ -28,6 +35,11 @@ body{
 .content {
     height: 100vh; 
     display: flex;
+    z-index: 1;
+}
+
+.btn {
+  z-index: 2 !important;
 }
 
 #menu{
@@ -49,6 +61,16 @@ body{
 .bg-darkerr.bg-darkerr{
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+.nav > .nav-item > .nav-link{
+  color: gray;
+}
+
+.nav > .nav-item > .active{
+  color: white;
+  background-color: #212529;
+}
+
 
 @media screen and (max-width: 991px) {
   #bg2{
